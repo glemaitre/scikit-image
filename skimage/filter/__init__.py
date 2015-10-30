@@ -44,7 +44,6 @@ def canny(*args, **kwargs):
     from skimage.feature._canny import canny as canny_
     return canny_(*args, **kwargs)
 
-
 __all__ = ['inverse',
            'wiener',
            'LPIFilter2D',

@@ -15,6 +15,7 @@ from .rank import median
 
 from .._shared.utils import deprecated, copy_func
 from .. import restoration
+from .inpaint_exemplar import inpaint_criminisi
 denoise_bilateral = deprecated('skimage.restoration.denoise_bilateral')\
     (restoration.denoise_bilateral)
 denoise_tv_bregman = deprecated('skimage.restoration.denoise_tv_bregman')\
@@ -74,4 +75,5 @@ __all__ = ['inverse',
            'threshold_yen',
            'threshold_isodata',
            'threshold_li',
-           'rank']
+           'rank',
+           'inpaint_criminisi']

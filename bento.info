@@ -62,7 +62,10 @@ Library:
     Extension: skimage.transform._hough_transform
         Sources:
             skimage/transform/_hough_transform.pyx
-    Extension: skimage.filters._ctmf
+    Extension: skimage.filters._inpaint_criminisi
+        Sources:
+            skimage/filters/_inpaint_criminisi.pyx
+    Extension: skimage.filters._denoise_cy
         Sources:
             skimage/filters/_ctmf.pyx
     Extension: skimage.measure._ccomp
