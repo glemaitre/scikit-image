@@ -16,7 +16,7 @@ tools/build_versions.py
 section_end "List.installed.dependencies"
 
 section "Test"
-pytest $TEST_ARGS skimage
+pytest -vsl $TEST_ARGS skimage
 section_end "Test"
 
 section "Flake8.test"
